@@ -93,8 +93,8 @@ const FirebaseLogin = ({ loginProp, ...others }) => {
         clientId: "783v0rokori887",
         //redirectUri: `http://localhost:7069/login`,
         // redirectUri: `http://linkedin-api2.itechnolabs.tech:7069/login`,
-        redirectUri: `http://localhost:3000/login`,
-        //redirectUri: `https://www.pipelight.io/login`,
+        //redirectUri: `http://localhost:3000/login`,
+        redirectUri: `https://www.pipelight.io/login`,
         onSuccess: (code) => {  
           setCode(code);
           setErrorMessage('');
@@ -117,8 +117,12 @@ const FirebaseLogin = ({ loginProp, ...others }) => {
             //setCode("");
             //console.log(`/api/linkedin/createAccount?${code_state}`);
             $('#login_loader_div').show(); 
-            $('#login_div').hide();  
-            axios.post(`${API_PATH}/api/linkedin/createAccount?${code_state}`).then((response) => { 
+            $('#login_div').hide(); 
+            let isVisabili = 0
+            if(localStorage.getItem('visabili') == 'true'){
+                isVisabili = 1
+            }
+            axios.post(`${API_PATH}/api/linkedin/createAccount?${code_state}&isVisabili=${isVisabili}`).then((response) => { 
                 
                 if(response.data.status == 'success'){ 
                     localStorage.setItem('user_token', response.data.token); 

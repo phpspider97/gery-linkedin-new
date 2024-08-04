@@ -101,7 +101,7 @@ class HubspotApi extends Controller{
 
             $client_id = '161315b1-1e34-410a-8b51-8c5bdc52b755';
             $client_secret = '69bbfc00-83e3-418a-a6f1-b10d5d0988e0';
-            $redirect_uri = 'http://localhost:3000/user/hubspot-token';
+            $redirect_uri = 'https://www.pipelight.io/user/hubspot-token';
             $token_url = 'https://api.hubapi.com/oauth/v1/token'; 
             $params = [
                 'grant_type' => 'authorization_code',

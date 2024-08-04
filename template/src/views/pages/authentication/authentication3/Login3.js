@@ -94,7 +94,7 @@ const Login = () => {
                                     </Grid> */}
                                 </Grid>
                             </AuthCardWrapper>
-                            {getSrcValue !== 'visabili'?
+                            {getSrcValue !== 'visabili' && localStorage.getItem('visabili') == undefined ?
                             <Grid item xs={12}>
                                 <Grid className='login_btn_Div'>
                                     <Link to="/register" className="admin_login_btn">Admin Login</Link>

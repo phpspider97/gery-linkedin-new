@@ -213,8 +213,8 @@ function Top(props) {
     const { linkedInLogin } = useLinkedIn({
         clientId: "783v0rokori887",
         //clientId: "783v0rokori887",
-        redirectUri: `http://localhost:3000/user`,
-        //redirectUri: `https://www.pipelight.io/user`,
+        //redirectUri: `http://localhost:3000/user`,
+        redirectUri: `https://www.pipelight.io/user`,
         onSuccess: (code) => {
             //console.log('12');
           setCode(code);

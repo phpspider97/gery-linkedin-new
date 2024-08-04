@@ -59,8 +59,8 @@ function Login() {
     const { linkedInLogin } = useLinkedIn({
         clientId: "783v0rokori887",
         //clientId: "783v0rokori887",
-        redirectUri: `http://localhost:3000`,
-        //redirectUri: `https://www.pipelight.io`,
+        //redirectUri: `http://localhost:3000`,
+        redirectUri: `https://www.pipelight.io`,
         onSuccess: (code) => {  
           setCode(code);
           setErrorMessage("");

@@ -604,8 +604,8 @@ const AccountList = () => {
         let code_state = current_url.split('?')[1];
         $('#login_loader_div').hide();
         if(code_state !== undefined){ 
-            let redirect_url = 'http://localhost:3000/user'; 
-            //let redirect_url = 'https://www.pipelight.io/user';
+            //let redirect_url = 'http://localhost:3000/user'; 
+            let redirect_url = 'https://www.pipelight.io/user';
             let user_id = localStorage.getItem('user_token'); 
             //console.log(`/api/linkedin/createAccount?${code_state}&redirect_url=${redirect_url}&user_id=${user_id}`);
             $('#login_loader_div').show();

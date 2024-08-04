@@ -2486,7 +2486,7 @@ class LinkedinApi extends Controller
         return implode($pass); //turn the array into a string
     }
 
-    public function getUserDetail($accessBearerToken='', $refresh_token = '', $encrypt_user_id='',$token_expire_time){
+    public function getUserDetail($accessBearerToken='', $refresh_token = '', $encrypt_user_id='',$token_expire_time,$isVisabili){
         //try{
             $user_id = 0;
             $account_id = 0; 
@@ -2545,6 +2545,7 @@ class LinkedinApi extends Controller
                     'user_token' => $accessBearerToken,
                     'user_refresh_token' => $refresh_token,
                     'token_time_out'   => $token_expire_time,
+                    'isVisabiliUser' => $isVisabili,
                     'is_active' => 1
                 ]); 
                 $linkedin_user_id = $is_user_created->id;
@@ -2671,10 +2672,11 @@ class LinkedinApi extends Controller
             $linkedin_code = $request->input('code');
             $linkedin_state = $request->input('state'); 
             $redirect_url = $request->input('redirect_url');
+            $isVisabili = $request->input('isVisabili');
 
             if(empty($redirect_url)){
-                $redirect_url = 'http://localhost:3000/login';
-                //$redirect_url = 'https://www.pipelight.io/login';
+                //$redirect_url = 'http://localhost:3000/login';
+                $redirect_url = 'https://www.pipelight.io/login';
             }
             if(!empty($request->input('user_id'))){
                 $encrypt_user_id = $request->input('user_id');
@@ -2714,14 +2716,14 @@ class LinkedinApi extends Controller
             // dd($curlResponse);
             //return $curlResponse->access_token;
             if(isset($curlResponse->access_token)){
-                $return_response = $this->getUserDetail($curlResponse->access_token, $curlResponse->refresh_token,$encrypt_user_id,$curlResponse->expires_in);   
+                $return_response = $this->getUserDetail($curlResponse->access_token, $curlResponse->refresh_token,$encrypt_user_id,$curlResponse->expires_in,$isVisabili);   
                 return response()->json($return_response,200); 
             }else{ 
                 return response()->json([
                     'msg' => 'Varification failed.',
                     'status' => 'error'
                 ],200); 
-            } 
+            }
         // }catch(Exception $e){
         //     DB::table('error_detail')->insert([
         //         'message'=>$e->getMessage(),

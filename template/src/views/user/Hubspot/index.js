@@ -93,8 +93,8 @@ const Index = () => {
 
     const syncWithHubSpot = () => { 
         let client_id = '161315b1-1e34-410a-8b51-8c5bdc52b755';
-        let redirect_uri = `http://localhost:3000/user/hubspot-token`; 
-        let authorization_url = `https://app-eu1.hubspot.com/oauth/authorize?client_id=161315b1-1e34-410a-8b51-8c5bdc52b755&redirect_uri=http://localhost:3000/user/hubspot-token&scope=crm.schemas.companies.write%20crm.objects.marketing_events.read%20oauth%20crm.objects.companies.write%20crm.objects.companies.read&optional_scope=behavioral_events.event_definitions.read_write%20crm.objects.marketing_events.write`; 
+        let redirect_uri = `https://www.pipelight.io/user/hubspot-token`; 
+        let authorization_url = `https://app-eu1.hubspot.com/oauth/authorize?client_id=161315b1-1e34-410a-8b51-8c5bdc52b755&redirect_uri=https://www.pipelight.io/user/hubspot-token&scope=crm.schemas.companies.write%20crm.objects.marketing_events.read%20oauth%20crm.objects.companies.write%20crm.objects.companies.read&optional_scope=behavioral_events.event_definitions.read_write%20crm.objects.marketing_events.write`; 
 
         window.location.href = authorization_url
         
