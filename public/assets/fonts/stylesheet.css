@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'AvantGardeITCTT';
+    src: url('AvantGardeITCTTDemi.woff2') format('woff2'),
+        url('AvantGardeITCTTDemi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGardeExtLitITCTT';
+    src: url('AvantGardeExtLitITCTTOblique.woff2') format('woff2'),
+        url('AvantGardeExtLitITCTTOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGardeExtLitITCTT';
+    src: url('AvantGardeExtLitITCTT.woff2') format('woff2'),
+        url('AvantGardeExtLitITCTT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGarde Bk BT';
+    src: url('AvantGardeITCbyBT-DemiOblique.woff2') format('woff2'),
+        url('AvantGardeITCbyBT-DemiOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGarde Bk BT';
+    src: url('AvantGardeITCbyBT-Demi.woff2') format('woff2'),
+        url('AvantGardeITCbyBT-Demi.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGardeMdITC';
+    src: url('AvantGardeMdITC-Bold.woff2') format('woff2'),
+        url('AvantGardeMdITC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGarde';
+    src: url('AvantGardeBold.woff2') format('woff2'),
+        url('AvantGardeBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGarde';
+    src: url('AvantGardeITCbyBT-Medium.woff2') format('woff2'),
+        url('AvantGardeITCbyBT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGardeMdITCTT';
+    src: url('AvantGardeMdITCTTOblique.woff2') format('woff2'),
+        url('AvantGardeMdITCTTOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGardeMdITCTT';
+    src: url('AvantGardeMdITCTTBold.woff2') format('woff2'),
+        url('AvantGardeMdITCTTBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGardeMdITCTT';
+    src: url('AvantGardeMdITCTT.woff2') format('woff2'),
+        url('AvantGardeMdITCTT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGarde Bk BT';
+    src: url('AvantGardeITCbyBT-Book.woff2') format('woff2'),
+        url('AvantGardeITCbyBT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGarde Bk BT';
+    src: url('AvantGardeITCbyBT-BookOblique.woff2') format('woff2'),
+        url('AvantGardeITCbyBT-BookOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGardeMdITCTT';
+    src: url('AvantGardeMdITCTTBold.woff2') format('woff2'),
+        url('AvantGardeMdITCTTBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvantGardeMdITCTT';
+    src: url('AvantGardeMdITCTT.woff2') format('woff2'),
+        url('AvantGardeMdITCTT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
